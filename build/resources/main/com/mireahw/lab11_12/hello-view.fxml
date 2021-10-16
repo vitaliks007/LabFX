@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.mireahw.lab11_12.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mireahw.lab11_12.Controller">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="186.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button id="buttonPlus" fx:id="buttonPlus" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonPlusAction" text="+" />
+            <Button id="buttonMinus" fx:id="buttonMinus" layoutX="165.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonMinusAction" text="-" />
+            <Button id="buttonMultiple" fx:id="buttonMultiple" layoutX="15.0" layoutY="161.0" mnemonicParsing="false" onAction="#buttonMultipleAction" text="*" />
+            <Button id="buttonDivide" fx:id="buttonDivide" layoutX="165.0" layoutY="161.0" mnemonicParsing="false" onAction="#buttonDivideAction" text="/" />
+            <Button id="buttonCalculate" fx:id="buttonCalculate" layoutX="88.0" layoutY="87.0" mnemonicParsing="false" onAction="#buttonCalculateAction" text="=" />
+         </children>
+      </AnchorPane>
+      <TextField id="textFieldNumber" fx:id="textFieldNumber" layoutX="76.0" layoutY="100.0" />
+   </children>
+</AnchorPane>

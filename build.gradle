@@ -24,7 +24,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.mireahw.lab11_12'
-    mainClass = 'com.mireahw.lab11_12.HelloApplication'
+    mainClass = 'com.mireahw.lab11_12.Main'
 }
 
 javafx {
